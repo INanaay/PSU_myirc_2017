@@ -12,7 +12,7 @@
 #include "../../../../inc/core/network/tcpclient/tcpclient.h"
 
 int tcpclient_init(tcpclient_t *client, int sockfd,
-		   struct sockaddr_in *addr)
+			struct sockaddr_in *addr)
 {
 	if (client == NULL || sockfd == -1 || addr == NULL)
 		return (EXIT_FAILURE);

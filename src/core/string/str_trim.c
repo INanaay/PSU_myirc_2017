@@ -12,8 +12,7 @@ static size_t spaces_count(const char *str)
 {
 	size_t count = 0;
 
-	while (isspace(*str))
-	{
+	while (isspace(*str)) {
 		count += 1;
 		str += 1;
 	}

@@ -11,7 +11,7 @@
 #include "../../../inc/server/protocol/welcome.h"
 
 static void list_all_channels(irc_server_t *irc_server,
-			      irc_client_t *irc_client)
+			irc_client_t *irc_client)
 {
 	size_t count = 0;
 	irc_channel_t *channel;

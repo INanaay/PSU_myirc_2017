@@ -9,7 +9,7 @@
 #include "../../../../inc/server/entities/irc_channel.h"
 
 irc_channel_t *irc_server_create_channel(irc_server_t *irc, const char *name,
-					 const char *subject, const char *pwd)
+					const char *subject, const char *pwd)
 {
 	irc_channel_t *channel = malloc(sizeof(irc_channel_t));
 

@@ -33,7 +33,7 @@ void ping_packet(irc_client_t *irc_client)
 }
 
 void pong_handler(irc_server_t *irc_server,
-		  irc_client_t *irc_client, char **tokens)
+		irc_client_t *irc_client, char **tokens)
 {
 	const char *serial;
 

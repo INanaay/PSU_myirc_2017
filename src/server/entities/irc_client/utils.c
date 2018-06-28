@@ -10,8 +10,8 @@
 #include "../../../../inc/server/entities/entities.h"
 
 static void send_rename_to_all_clients(irc_client_t *irc_client,
-				       irc_channel_t *channel,
-				       const char *nickname)
+				irc_channel_t *channel,
+				const char *nickname)
 {
 	int fd;
 	irc_client_t *client = NULL;

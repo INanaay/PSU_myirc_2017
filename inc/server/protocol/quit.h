@@ -11,6 +11,6 @@
 #include "../entities/entities.h"
 
 void quit_handler(irc_server_t *irc_server,
-		  irc_client_t *irc_client, char **tokens);
+		irc_client_t *irc_client, char **tokens);
 
 #endif //PSU_MYIRC_2017_QUIT_H

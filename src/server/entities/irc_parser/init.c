@@ -18,7 +18,7 @@
 #include "../../../../inc/server/protocol/names.h"
 
 static int irc_parser_add_handler(irc_parser_t *parser, const char *header,
-				  irc_packet_handler handler)
+				irc_packet_handler handler)
 {
 	key_value_t pair;
 	size_t index = parser->index;

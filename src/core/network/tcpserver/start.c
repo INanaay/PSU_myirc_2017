@@ -15,7 +15,7 @@
 extern bool interrupted;
 
 static void tcpserver_accept(tcpserver_t *server,
-			     connectionAcceptedCallback callback)
+				connectionAcceptedCallback callback)
 {
 	tcpclient_t *client;
 	struct sockaddr_in addr;
@@ -40,7 +40,7 @@ static void tcpserver_accept(tcpserver_t *server,
 }
 
 static void tcpserver_disconnection(tcpserver_t *server, int sockfd,
-				    clientDisconnectedCallback dcallback)
+				clientDisconnectedCallback dcallback)
 {
 	tcpclient_t *client;
 
@@ -55,8 +55,8 @@ static void tcpserver_disconnection(tcpserver_t *server, int sockfd,
 }
 
 static void tcpserver_receive(tcpserver_t *server, int sockfd,
-			      messageReceivedCallback mcallback,
-			      clientDisconnectedCallback dcallback)
+			messageReceivedCallback mcallback,
+			clientDisconnectedCallback dcallback)
 {
 	int amount;
 	uint8_t *buffer;
@@ -80,7 +80,7 @@ static void tcpserver_receive(tcpserver_t *server, int sockfd,
 }
 
 static void tcpserver_handle_epoll_event(tcpserver_t *server,
-					 struct epoll_event *event)
+					struct epoll_event *event)
 {
 	int sockfd = event->data.fd;
 	messageReceivedCallback mcallback = server->message_callback;
@@ -93,9 +93,9 @@ static void tcpserver_handle_epoll_event(tcpserver_t *server,
 };
 
 int tcpserver_start(tcpserver_t *server,
-		    connectionAcceptedCallback accept_callback,
-		    messageReceivedCallback message_callback,
-		    clientDisconnectedCallback disconnect_callback)
+		connectionAcceptedCallback accept_callback,
+		messageReceivedCallback message_callback,
+		clientDisconnectedCallback disconnect_callback)
 {
 	if (server == NULL)
 		return (EXIT_FAILURE);

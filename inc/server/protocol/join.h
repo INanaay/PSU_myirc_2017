@@ -11,6 +11,6 @@
 #include "../entities/entities.h"
 
 void join_handler(irc_server_t *irc_server, irc_client_t *client,
-		  char **tokens);
+			char **tokens);
 
 #endif //PSU_MYIRC_2017_JOIN_H

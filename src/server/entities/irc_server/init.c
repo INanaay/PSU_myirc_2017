@@ -13,7 +13,7 @@
 #include "../../../../inc/server/entities/irc_channel.h"
 
 static int irc_server_init_tcpserver(irc_server_t *irc,
-				     const char *host, int port)
+					const char *host, int port)
 {
 	tcpserver_informations_t informations;
 

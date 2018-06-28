@@ -13,7 +13,7 @@
 #include "../../../../inc/core/network/tcpserver/tcpserver.h"
 
 static int tcpserver_socket(tcpserver_t *server, int ip_type,
-			    int protocol_type)
+				int protocol_type)
 {
 	server->sockfd = socket(ip_type, protocol_type, 0);
 	if (server->sockfd == -1)
@@ -34,7 +34,7 @@ static int tcpserver_setopt(tcpserver_t *server)
 }
 
 static int tcpserver_bind(tcpserver_t *server, int ip_type,
-			  const char *host, int port)
+			const char *host, int port)
 {
 	struct sockaddr_in addr;
 	socklen_t addrlen = sizeof(addr);
@@ -69,7 +69,7 @@ static int tcpserver_listen(tcpserver_t *server, size_t capacity)
 }
 
 int tcpserver_init(tcpserver_t *server, void *super,
-		   tcpserver_informations_t *informations)
+		tcpserver_informations_t *informations)
 {
 	int ip_t = informations->ip_type;
 	int proto_t = informations->protocol_type;

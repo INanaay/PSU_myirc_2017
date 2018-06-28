@@ -44,8 +44,8 @@ static char *get_message(char **tokens)
 }
 
 static void message_handler_channel(irc_client_t *sender,
-				    irc_channel_t *channel,
-				    const char *message)
+				irc_channel_t *channel,
+				const char *message)
 {
 	int fd = -1;
 	irc_client_t *receiver;
@@ -67,8 +67,8 @@ static void message_handler_channel(irc_client_t *sender,
 }
 
 static void message_handler_user(irc_client_t *sender,
-				 irc_client_t *receiver,
-				 const char *message)
+				irc_client_t *receiver,
+				const char *message)
 {
 	int fd = receiver->tcpclient->sockfd;
 	const char *host = sender->host;
@@ -81,8 +81,8 @@ static void message_handler_user(irc_client_t *sender,
 }
 
 void message_handler(irc_server_t *server,
-		     irc_client_t *sender,
-		     char **tokens)
+		irc_client_t *sender,
+		char **tokens)
 {
 	char *message, *target;
 	irc_client_t *receiver;

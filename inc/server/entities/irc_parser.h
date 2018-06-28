@@ -17,7 +17,7 @@ int irc_parser_init(irc_parser_t *parser, size_t handler_count);
 char **irc_parser_get_packets(const uint8_t *buffer, size_t n);
 char **irc_parser_get_tokens(const char *packet);
 irc_packet_handler irc_parser_get_handler(irc_parser_t *parser,
-					  char **tokens);
+					char **tokens);
 void irc_parser_destroy(irc_parser_t *parser);
 
 #endif //PSU_MYIRC_2017_IRC_PARSER_H

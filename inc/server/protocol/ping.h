@@ -15,6 +15,6 @@
 
 void ping_packet(irc_client_t *irc_client);
 void pong_handler(irc_server_t *server, irc_client_t *irc_client,
-		  char **tokens);
+		char **tokens);
 
 #endif //PSU_MYIRC_2017_PING_H

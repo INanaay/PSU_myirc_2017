@@ -11,6 +11,6 @@
 #include "../entities/entities.h"
 
 void message_handler(irc_server_t *server, irc_client_t *client,
-		     char **tokens);
+		char **tokens);
 
 #endif //PSU_MYIRC_2017_MESSAGE_H

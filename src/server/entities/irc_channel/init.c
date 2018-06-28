@@ -9,7 +9,7 @@
 #include "../../../../inc/server/entities/entities.h"
 
 int irc_channel_init(irc_channel_t *channel, const char *name,
-		     const char *subject, const char *password)
+		const char *subject, const char *password)
 {
 	int ret = 0;
 

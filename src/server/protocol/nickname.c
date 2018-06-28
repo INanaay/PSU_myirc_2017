@@ -26,7 +26,7 @@ static void nickname_set_handler(irc_client_t *client, char **tokens)
 }
 
 static void nickname_rename_handler(irc_server_t *irc, irc_client_t *client,
-				    char *old_nickname, char *new_nickname)
+				char *old_nickname, char *new_nickname)
 {
 	int contains = irc_server_contains_nickname(irc, old_nickname);
 	if (!contains)

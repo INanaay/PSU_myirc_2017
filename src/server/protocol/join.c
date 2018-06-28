@@ -42,13 +42,13 @@ static void on_client_joined(irc_channel_t *channel, irc_client_t *irc_client)
 }
 
 static irc_channel_t *create_channel(irc_server_t *server,
-				     const char *channel_name)
+				const char *channel_name)
 {
 	return (irc_server_create_channel(server, channel_name, NULL, NULL));
 }
 
 void join_handler(irc_server_t *irc_server, irc_client_t *client,
-		  char **tokens)
+		char **tokens)
 {
 	char **names_tokens;
 	irc_channel_t *channel;

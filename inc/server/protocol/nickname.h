@@ -15,6 +15,6 @@
 # define NICKNAME_COLLISION "ERR_NICKCOLLISION"
 
 void nickname_handler(irc_server_t *irc, irc_client_t *irc_client,
-		      char **tokens);
+			char **tokens);
 
 #endif //PSU_MYIRC_2017_NICKNAME_H

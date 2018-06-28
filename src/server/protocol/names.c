@@ -53,7 +53,7 @@ static char *get_channel_names(irc_server_t *server, const char *channel_name)
 }
 
 static void channel_names(irc_server_t *server, irc_client_t *client,
-			  const char *channel)
+			const char *channel)
 {
 	int fd = client->tcpclient->sockfd;
 	const char *nick = client->nickname;

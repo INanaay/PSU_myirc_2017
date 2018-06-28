@@ -78,7 +78,7 @@ int irc_server_disconnect_client(irc_server_t *irc, irc_client_t *client)
 }
 
 irc_channel_t *irc_server_get_channel(irc_server_t *irc_server,
-				      const char *channel_name)
+				const char *channel_name)
 {
 	irc_channel_t *channel;
 	linkedlist_t *channels = &irc_server->channels;

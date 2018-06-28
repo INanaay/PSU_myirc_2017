@@ -12,7 +12,7 @@
 #include "../../../inc/server/entities/irc_channel.h"
 
 static void on_client_left(irc_client_t *irc_client,
-			   irc_channel_t *channel)
+			irc_channel_t *channel)
 {
 	irc_client_t *client;
 	linkedlist_t *clients;
@@ -30,7 +30,7 @@ static void on_client_left(irc_client_t *irc_client,
 }
 
 void part_handler(irc_server_t *irc_server,
-		  irc_client_t *irc_client, char **tokens)
+		irc_client_t *irc_client, char **tokens)
 {
 	irc_channel_t *channel;
 	const char *channel_name;
